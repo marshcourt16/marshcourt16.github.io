@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="The Scofield Wedding">
+</head>
+<body>
+<script type = "text/javascript" >
+	var date1 = new Date("04/30/2022");
+	var date2 = new Date();
+	date2.setHours(0,0,0,0);
+var Difference_In_Time = date2.getTime() - date1.getTime();
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+document.write("<h1>The Scofield Wedding</h1>"
+			+ "<h2>Its now over!</h2>"
+			+ "<p>We've been married for "
+			+ Difference_In_Days
+			+" days and it was wonderful to have you there. Speak soon and give us a call if you need us.  </p>"
+			+ "<p>R&amp;M</p>");
+</script>
+<p style="text-align: right"><a href="mailto:info@scofieldwedding.co.uk">message</a></p>
+</body>
+</html>
